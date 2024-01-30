@@ -10,20 +10,19 @@
         <h1>Equi Joins</h1>
         <table border="2px" style="border-collapse: collapse;">
             <tr>
-                <th>empno</th>
-                <th>ename</th>
-                <th>job</th>
-                <th>mgr</th>
-                <th>hiredate</th>
-                <th>sal</th>
-                <th>comm</th>
-                <th>deptno</th>
-                <th>dname</th>
-                <th>dlocation</th>
+                <th>EMPNO</th>
+                <th>ENAME</th>
+                <th>JOB</th>
+                <th>MGR</th>
+                <th>HIREDATE</th>
+                <th>SAL</th>
+                <th>COMM</th>
+                <th>DEPTNO</th>
+                <th>DNAME</th>
+                <th>DLOCATION</th>
             </tr>
 
             {% for emp in EmpObjects %}
-
                 <tr>
                     <td>{{emp.empno}}</td>
                     <td>{{emp.ename}}</td>
@@ -36,7 +35,6 @@
                     <td>{{emp.deptno.dname}}</td>
                     <td>{{emp.deptno.dlocation}}</td>
                 </tr>
-
             {% endfor %}
         </table>
     </center>

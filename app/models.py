@@ -21,8 +21,8 @@ class Emp(models.Model):
     comm=models.DecimalField(max_digits=10,decimal_places=2,null=True,blank=True)
     deptno=models.ForeignKey(Dept,on_delete=models.CASCADE)
 
-    def __str__(self):
-        return self.ename
+    # def __str__(self):
+    #     return self.ename
 
 
 class Salgrade(models.Model):
