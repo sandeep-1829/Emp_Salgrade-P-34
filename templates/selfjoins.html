@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Self Joins</h1>
+        <table border="3px">
+            <tr>
+                <th>Emp-name</th>
+                <th>Emp-Manager</th>
+                <th>Salary</th>
+                <th>Job</th>
+            </tr>
+
+            {% for emo in EmpObjects %}
+            <tr>
+                <td>{{emo.ename}}</td>
+                <td>{{emo.mgr.ename}}</td>
+                <td>{{emo.sal}}</td>
+                <td>{{emo.job}}</td>
+            </tr>
+            {% endfor %}
+
+
+        </table>
+    </center>
+</body>
+</html>
