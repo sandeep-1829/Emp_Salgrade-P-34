@@ -14,6 +14,7 @@
                 <th>Emp-Manager</th>
                 <th>Salary</th>
                 <th>Job</th>
+                <th>Commission</th>
             </tr>
 
             {% for emo in EmpObjects %}
@@ -22,6 +23,7 @@
                 <td>{{emo.mgr.ename}}</td>
                 <td>{{emo.sal}}</td>
                 <td>{{emo.job}}</td>
+                <td>{{emo.comm}}</td>
             </tr>
             {% endfor %}
 

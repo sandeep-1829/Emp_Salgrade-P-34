@@ -9,7 +9,8 @@ class Dept(models.Model):
     dlocation=models.CharField(max_length=100)
 
     def __str__(self):
-        return str(self.deptno)+' '+self.dname 
+        # return str(self.deptno)+' '+self.dname 
+        return str(self.deptno)
 
 class Emp(models.Model):
     empno=models.IntegerField(primary_key=True)
